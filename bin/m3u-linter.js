@@ -18,7 +18,7 @@ program
 const options = program.opts()
 const configFilePath = options.config
 if (!configFilePath) {
-  onError('config file is required')
+  onError('Config file is required')
 } else {
   fs.readFile(configFilePath, (fileError, data) => {
     if (fileError) {
