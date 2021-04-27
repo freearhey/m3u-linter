@@ -3,7 +3,7 @@ module.exports = function (lines) {
   lines.forEach((line, index) => {
     if (!line.startsWith('#EXTINF:')) return
     const boAttrs = line.match(/ [a-z-]+=/gi)
-    const eoAttrs = line.match(/ [a-z-]+="[^"]+/gi)
+    const eoAttrs = line.match(/ [a-z-]+="[^"=]+/gi)
     if (boAttrs) {
       boAttrs.forEach(attr => {
         const quoteIndex = line.indexOf(attr) + attr.length
