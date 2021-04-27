@@ -3,7 +3,6 @@ module.exports = function (lines) {
   lines.forEach((line, index) => {
     if (!line.startsWith('#EXTINF:')) return
     const boAttrs = line.match(/ [a-z-]+=/gi)
-    const eoAttrs = line.match(/ [a-z-]+="[^"=]+/gi)
     if (boAttrs) {
       boAttrs.forEach(attr => {
         const quoteIndex = line.indexOf(attr) + attr.length
@@ -16,10 +15,12 @@ module.exports = function (lines) {
         }
       })
     }
+    const eoAttrs = line.match(/ [a-z-]+="[^"]+/gi)
     if (eoAttrs) {
       eoAttrs.forEach(attr => {
         const quoteIndex = line.indexOf(attr) + attr.length
-        if (line.charAt(quoteIndex) !== '"') {
+        const nextChars = line.slice(quoteIndex, quoteIndex + 2)
+        if (nextChars !== '" ' && nextChars !== '",') {
           errors.push({
             line: index + 1,
             column: quoteIndex + 1,
