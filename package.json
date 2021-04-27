@@ -1,0 +1,23 @@
+{
+  "name": "m3u-linter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "m3u-linter": "bin/m3u-linter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0",
+    "glob": "^7.1.6",
+    "is-valid-path": "^0.1.1",
+    "valid-url": "^1.0.9"
+  }
+}
