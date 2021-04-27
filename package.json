@@ -1,23 +1,22 @@
 {
   "name": "m3u-linter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A linter to check formatting of M3U files",
   "main": "src/index.js",
   "preferGlobal": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "bin": {
     "m3u-linter": "bin/m3u-linter.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "m3u",
+    "linter"
+  ],
+  "author": "Arhey",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.1",
     "commander": "^7.2.0",
-    "glob": "^7.1.6",
-    "is-valid-path": "^0.1.1",
-    "valid-url": "^1.0.9"
+    "glob": "^7.1.6"
   }
 }
