@@ -13,18 +13,18 @@ npm install -g m3u-linter
 #### Check single file:
 
 ```sh
-m3u-linter /path-to-playlist/example.m3u
+m3u-linter path-to-playlist/example.m3u
 ```
 
 #### Check all files in the folder:
 
 ```sh
-m3u-linter folder/*.m3u
+m3u-linter some-folder/*.m3u
 ```
 
 Arguments:
 
-- `-c, --config`: path to config file (default: m3u-linter.config.json)
+- `-c, --config`: path to config file (default: ./m3u-linter.config.json)
 
 #### m3u-linter.config.json
 
