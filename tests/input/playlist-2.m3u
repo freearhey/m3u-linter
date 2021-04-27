@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-language="bbb aaa" bali tvg-name="ggg fff tvg-country=",Example
+#EXTINF:-1 tvg-language="bbb aaa" tvg-name="ggg fff tvg-country=",Example
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 https://example.com/playlist.m3u8
