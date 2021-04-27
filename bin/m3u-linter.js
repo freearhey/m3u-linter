@@ -10,7 +10,7 @@ program
   .version(package.version)
   .name(package.name)
   .description(package.description)
-  .option('-c, --config [filePath]', 'config file', 'm3u-linter.config.json')
+  .option('-c, --config [filePath]', 'config file', './m3u-linter.config.json')
   .arguments('[fileList...]')
   .action((args = []) => (fileList = args.length > 0 ? args : undefined))
   .parse(process.argv)
