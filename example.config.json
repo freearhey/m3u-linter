@@ -7,6 +7,7 @@
     "require-info": true,
     "no-trailing-spaces": true,
     "no-whitespace-before-title": true,
-    "no-multi-spaces": true
+    "no-multi-spaces": true,
+    "no-extra-comma": true
   }
 }
