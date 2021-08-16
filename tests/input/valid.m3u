@@ -3,5 +3,5 @@
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://example.com/index.m3u8
-#EXTINF:-1  prop-zero="https://yt3.ggpht.com/ytc/AAUvwnhrQilc_eT-CYCFyMmy0ZtBKTw4vFQcRtXGzHQc4A=s900-c-k-c0x00ffffff-no-rj" prop-two="value avc avcc" prop-one="value",Example
+#EXTINF:-1 prop-zero="https://yt3.ggpht.com/ytc/AAUvwnhrQilc_eT-CYCFyMmy0ZtBKTw4vFQcRtXGzHQc4A=s900-c-k-c0x00ffffff-no-rj" prop-two="value avc avcc" prop-one="value",Example
 folder/index.m3u8
