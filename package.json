@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "preferGlobal": true,
   "homepage": "https://github.com/freearhey/m3u-linter#readme",
-  "scripts": {},
+  "scripts": {
+    "test": "bin/m3u-linter.js --config=example.config.json tests/input/*.m3u"
+  },
   "bin": {
     "m3u-linter": "bin/m3u-linter.js"
   },
