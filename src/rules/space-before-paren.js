@@ -1,7 +1,8 @@
 module.exports = function (lines) {
   const errors = []
   lines.forEach((line, index) => {
-    const matches = line.match(/\S\(/)
+    if (!/^#/.test(line)) return
+    const matches = line.match(/.*(?=,).*([^,\s]\()/)
     if (matches) {
       errors.push({
         line: index + 1,
