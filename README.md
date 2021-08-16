@@ -37,7 +37,11 @@ Arguments:
     "attribute-quotes": true,
     "require-info": true,
     "no-trailing-spaces": true,
-    "no-whitespace-before-title": true
+    "no-whitespace-before-title": true,
+    "no-multi-spaces": true,
+    "no-extra-comma": true,
+    "space-before-paren": true,
+    "no-dash": true
   }
 }
 ```
