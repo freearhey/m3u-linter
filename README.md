@@ -36,6 +36,7 @@ Arguments:
     "require-header": true,
     "attribute-quotes": true,
     "require-info": true,
+    "require-title": true,
     "no-trailing-spaces": true,
     "no-whitespace-before-title": true,
     "no-multi-spaces": true,
