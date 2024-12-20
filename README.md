@@ -42,7 +42,8 @@ Arguments:
     "no-multi-spaces": true,
     "no-extra-comma": true,
     "space-before-paren": true,
-    "no-dash": true
+    "no-dash": true,
+    "require-link": true
   }
 }
 ```
