@@ -1,0 +1,6 @@
+#EXTM3U
+#EXTINF:-1,Example
+#EXTVLCOPT:http-referrer=http://example.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTINF:-1,Example
+https://example.com/index.m3u8
