@@ -1,7 +1,8 @@
 module.exports = function (lines) {
   const errors = []
-  lines.pop()
-  lines.forEach((line, index) => {
+  const localLines = [...lines]
+  localLines.pop()
+  localLines.forEach((line, index) => {
     if (!line.trim().length) {
       errors.push({
         line: index + 1,
