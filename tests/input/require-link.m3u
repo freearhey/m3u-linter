@@ -4,6 +4,5 @@ https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/60940a07d88ba90007b9c
 #EXTINF:-1,Example
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-#EXTINF:-1,Example 2
 #EXTINF:-1 prop-zero="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Webysther_20160322_-_Logo_UnB_(sem_texto).svg/200px-Webysther_20160322_-_Logo_UnB_(sem_texto).svg.png" prop-two="value avc avcc" prop-one="value",(GE) Example (XM-TV)
 folder/index.m3u8
