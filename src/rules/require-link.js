@@ -1,5 +1,14 @@
 let IsValidPath = require('is-valid-path')
 
+function isURI(string) {
+  try {
+    const url = new URL(string)
+    return /^(http:|https:|mms:|mmsh:|rtsp:|rtmp:|srt:|rtp:|udp:|smb:|ftp:|nfs:)/.test(url.protocol)
+  } catch {
+    return false
+  }
+}
+
 module.exports = function (lines) {
   const errors = []
   let string = lines.join('\n')
@@ -20,7 +29,7 @@ module.exports = function (lines) {
     let lastLine = sectionLines[sectionLines.length - 1]
     if (!lastLine) return
 
-    if (lastLine.startsWith('http') || IsValidPath(lastLine)) return
+    if (isURI(lastLine) || IsValidPath(lastLine)) return
 
     errors.push({
       line: currentLineIndex - sectionLength + 1,
